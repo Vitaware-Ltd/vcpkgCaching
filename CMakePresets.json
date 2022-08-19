@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default-configure-preset",
+      "binaryDir": "build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": {
+          "type": "FILEPATH",
+          "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+        }
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "debug-preset",
+      "configurePreset": "default-configure-preset",
+      "configuration": "Debug"
+    },
+    {
+      "name": "release-preset",
+      "configurePreset": "default-configure-preset",
+      "configuration": "Release"
+    }
+  ]
+}
