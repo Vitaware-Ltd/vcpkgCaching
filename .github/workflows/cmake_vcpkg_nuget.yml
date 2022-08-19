@@ -50,4 +50,4 @@ jobs:
     
     - name: Configure CMake
       shell: 'bash'
-      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -DVCPKG_INSTALL_OPTIONS="--x-buildtrees-root=C:/buildtrees --clean-after-build" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
+      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -DVCPKG_INSTALL_OPTIONS="--x-buildtrees-root=C:/buildtrees" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
