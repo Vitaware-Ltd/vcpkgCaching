@@ -8,7 +8,7 @@
   "configurePresets": [
     {
       "name": "default-configure-preset",
-      "binaryDir": "build",
+      "binaryDir": "../../build",
       "cacheVariables": {
         "CMAKE_TOOLCHAIN_FILE": {
           "type": "FILEPATH",
