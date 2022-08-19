@@ -21,7 +21,6 @@
         "harfbuzz",
         "hdf5",
         "icu",
-        "intel-mkl",
         "jasper",
         "jsoncpp",
         "libharu",
