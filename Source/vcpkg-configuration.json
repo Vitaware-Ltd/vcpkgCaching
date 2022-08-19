@@ -1,0 +1,10 @@
+ {
+  "registries": [
+    {
+      "kind": "git",
+      "repository": "https://github.com/Vitaware-Ltd/vitaVcpkg",
+      "baseline": "31359e91c687126400147660f10d7f3d2fffb646",
+      "packages": [ "vtk9qt6" ]
+    }
+  ]
+}

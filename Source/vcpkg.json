@@ -56,6 +56,10 @@
         "utfcpp",
         "yaml-cpp",
         "zlib",
-        "zstd"
+        "zstd",
+        {
+            "name" : "vtk9qt6",
+            "features" : [ "qt" ]
+        }
     ]
 }
