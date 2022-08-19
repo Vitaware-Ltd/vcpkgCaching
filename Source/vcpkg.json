@@ -1,5 +1,5 @@
 {
-    "name" : "vcpkgCaching",
+    "name" : "vcpkg-caching",
     "version-string" : "1.0.0",
     "dependencies" :
     [
