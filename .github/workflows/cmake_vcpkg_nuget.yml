@@ -1,0 +1,50 @@
+name: CMake with vcpkg binary caching to GitHub Packages
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  BUILD_TYPE: Release
+  VCPKG_BINARY_SOURCES: 'clear;nuget,GitHub,readwrite'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - run: git config --global credential.helper '!f() { echo username=unused; echo password=${{ secrets.BUILD_PAT }}; }; f'
+      shell: 'bash'
+      name: 'git credential helper setup'
+    
+    - uses: nuget/setup-nuget@v1
+      with:
+        nuget-api-key: ${{ secrets.BUILD_PAT }}
+        nuget-version: 'latest'
+    
+    - name: 'Setup binary caching'
+      shell: 'bash'
+      run: |
+        nuget \
+          sources add \
+          -source "https://nuget.pkg.github.com/Vitaware-Ltd/index.json" \
+          -storepasswordincleartext \
+          -name "GitHub" \
+          -username "Vitaware-Ltd" \
+          -password "${{ secrets.BUILD_PAT }}"
+        nuget \
+          setapikey "${{ secrets.BUILD_PAT }}" \
+          -source "https://nuget.pkg.github.com/<Vitaware-Ltd>/index.json"
+
+    - uses: friendlyanon/setup-vcpkg@v1
+      with:
+        committish: '571a0551ebab159fd460cb1534f6c820fcd6565a'
+        cache: 'false'
+  
+    - name: Configure CMake
+      shell: 'bash'
+      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
