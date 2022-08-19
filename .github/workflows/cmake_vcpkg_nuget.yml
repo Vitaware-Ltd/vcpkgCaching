@@ -38,7 +38,7 @@ jobs:
           -password "${{ secrets.BUILD_PAT }}"
         nuget \
           setapikey "${{ secrets.BUILD_PAT }}" \
-          -source "https://nuget.pkg.github.com/<Vitaware-Ltd>/index.json"
+          -source "https://nuget.pkg.github.com/Vitaware-Ltd/index.json"
 
     - uses: friendlyanon/setup-vcpkg@v1
       with:
