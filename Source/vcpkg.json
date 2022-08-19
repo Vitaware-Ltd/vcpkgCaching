@@ -22,7 +22,6 @@
         "hdf5",
         "icu",
         "intel-mkl",
-        "ipopt",
         "jasper",
         "jsoncpp",
         "libharu",
