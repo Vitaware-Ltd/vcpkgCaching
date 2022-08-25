@@ -23,7 +23,6 @@
           "features": [ "64bit-scalars" ]
         },
         "tclap", 
-        "yaml-cpp",
-        "ipopt"
+        "yaml-cpp"
     ]
 }
