@@ -3,7 +3,7 @@
     {
       "kind": "git",
       "repository": "https://github.com/Vitaware-Ltd/vitaVcpkg",
-      "baseline": "31359e91c687126400147660f10d7f3d2fffb646",
+      "baseline": "455885abc3a4392d168cc08be148164f0cd2317b",
       "packages": [ "ipopt", "pmp-library", "vtkbool", "vtk9qt6" ]
     }
   ]
