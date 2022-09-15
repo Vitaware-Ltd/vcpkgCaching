@@ -17,6 +17,9 @@
             "features" : [ "qt" ]
         },
         "fmt",
+        "libigl",
+        "nlopt",
+        "tinyad",
         "abseil",
         {
           "name": "pmp-library",
