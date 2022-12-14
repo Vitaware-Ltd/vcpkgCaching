@@ -26,6 +26,8 @@
           "features": [ "64bit-scalars" ]
         },
         "tclap", 
-        "yaml-cpp"
+        "yaml-cpp",
+        "ixwebsocket",
+        "date"
     ]
 }
