@@ -11,9 +11,9 @@
         "qttools",
         "sqlite3",
         "bshoshany-thread-pool",
-		"vtkbool",
+        "vtkbool",
         {
-            "name" : "vtk9qt6",
+            "name" : "vtk",
             "features" : [ "qt" ]
         },
         "fmt",
