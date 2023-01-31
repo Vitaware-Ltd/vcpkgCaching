@@ -9,393 +9,463 @@ jobs:
 
     steps:
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'nlohmann-json_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vcpkg-cmake-config_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vcpkg-cmake_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'zlib_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libpng_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'fmt_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'curl_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'sqlite3_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'bzip2_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'brotli_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'pcre2_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vcpkg-tool-meson_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'icu_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'freetype_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'harfbuzz_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'double-conversion_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'eigen3_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'zstd_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'lz4_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libjpeg-turbo_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vcpkg-cmake-get-vars_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'openssl_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'qtbase_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'expat_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libpq_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'qttools_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'opengl_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'freeglut_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'szip_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libtheora_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libxml2_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libiconv_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'exprtk_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'cgns_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'jsoncpp_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'glew_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libwebp_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'liblzma_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'tiff_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'jasper_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vcpkg-pkgconfig-get-modules_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'pegtl-2_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'pkgconf_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'pugixml_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'proj_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'utfcpp_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libharu_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'netcdf-c_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'hdf5_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'libogg_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'qtimageformats_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vtk9qt6_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'pmp-library_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
-
-      - uses: actions/delete-package-versions@v4
-        with: 
+        with:
           package-name: 'abseil_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
+        with:
+          package-name: 'brotli_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
           package-name: 'bshoshany-thread-pool_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
+        with:
+          package-name: 'bzip2_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
           package-name: 'catch2_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'qtsvg_x64-windows'
+        with:
+          package-name: 'cereal_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'vtkbool_x64-windows'
+        with:
+          package-name: 'cgns_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'tclap_x64-windows'
+        with:
+          package-name: 'curl_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'yaml-cpp_x64-windows'
+        with:
+          package-name: 'date_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
+        with:
+          package-name: 'double-conversion_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'egl-registry_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'eigen3_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'expat_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'exprtk_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'fmt_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'freeglut_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'freetype_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'gklib_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'glew_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'harfbuzz_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'hdf5_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'icu_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'ixwebsocket_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'jasper_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'jsoncpp_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libharu_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libiconv_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
           package-name: 'libigl_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
+        with:
+          package-name: 'libjpeg-turbo_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'liblzma_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libogg_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libpng_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libpq_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libtheora_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libwebp_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'libxml2_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'lz4_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'matio_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'mbedtls_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'metis_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'netcdf-c_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'nlohmann-json_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
           package-name: 'nlopt_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
+        with:
+          package-name: 'opengl_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'opengl-registry_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'openssl_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'pcre2_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'pegtl-2_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'pkgconf_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'pmp-library_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'proj_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'pugixml_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qtbase_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qtdeclarative_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qtimageformats_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qtkeychain-qt6_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qtshadertools_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qtsvg_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'qttools_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'seacas_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'sqlite3_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'szip_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'tclap_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'tiff_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
           package-name: 'tinyad_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'openblas_x64-windows'
+        with:
+          package-name: 'utfcpp_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
       - uses: actions/delete-package-versions@v4
-        with: 
-          package-name: 'proj4_x64-windows'
+        with:
+          package-name: 'vcpkg-cmake_x64-windows'
           min-versions-to-keep: 1
           package-type: nuget
 
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'vcpkg-cmake-config_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
 
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'vcpkg-cmake-get-vars_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'vcpkg-pkgconfig-get-modules_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'vcpkg-tool-meson_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'verdict_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'vtk_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'vtkbool_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'yaml-cpp_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'zlib_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
+
+      - uses: actions/delete-package-versions@v4
+        with:
+          package-name: 'zstd_x64-windows'
+          min-versions-to-keep: 1
+          package-type: nuget
