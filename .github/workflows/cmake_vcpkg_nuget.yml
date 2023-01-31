@@ -49,9 +49,7 @@ jobs:
         committish: '91dd61bd441a68b4017b61011d0350b2e6aeeccf'
         cache: 'false'
   
-    - run: Get-PSDrive
-    - run: mkdir C:\buildtrees
+    - uses: ilammy/msvc-dev-cmd@v1
     
     - name: Configure CMake
-      shell: 'bash'
-      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
+      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
