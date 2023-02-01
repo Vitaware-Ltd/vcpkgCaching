@@ -162,12 +162,12 @@ jobs:
           min-versions-to-keep: 1
           package-type: nuget
 
-      - name: Deleting ixwebsocket_x64-windows
-        uses: actions/delete-package-versions@v4
-        with:
-          package-name: 'ixwebsocket_x64-windows'
-          min-versions-to-keep: 1
-          package-type: nuget
+#      - name: Deleting ixwebsocket_x64-windows
+#        uses: actions/delete-package-versions@v4
+#        with:
+#          package-name: 'ixwebsocket_x64-windows'
+#          min-versions-to-keep: 1
+#          package-type: nuget
 
       - name: Deleting jasper_x64-windows
         uses: actions/delete-package-versions@v4
