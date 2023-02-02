@@ -39,21 +39,24 @@ jobs:
           setapikey "${{ secrets.BUILD_PAT }}" \
           -source "https://nuget.pkg.github.com/Vitaware-Ltd/index.json"
 
-    - name: Create vcpkg directory
-      run: |
-        mkdir C:\vita_vcpkg
-        New-Item -Path vcpkg -ItemType SymbolicLink -Value C:\vita_vcpkg
+    # Don't symlink vcpkg to the C drive when building dependencies as the harfbuzz build
+    # uses a Python script that utilises os.path.relpath which fails due to the different drives.
+    # Instead use --x-buildtrees-root
+    #
+    #- name: Create vcpkg directory
+    #  run: |
+    #    mkdir C:\vita_vcpkg
+    #    New-Item -Path vcpkg -ItemType SymbolicLink -Value C:\vita_vcpkg
 
     - uses: friendlyanon/setup-vcpkg@v1
       with:
         committish: '91dd61bd441a68b4017b61011d0350b2e6aeeccf'
         cache: 'false'
   
+    - run: Get-PSDrive
+    - run: mkdir C:\buildtrees
+    
     - uses: ilammy/msvc-dev-cmd@v1
     
     - name: Configure CMake
-      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
-
-    - name: Print log
-      if: always()
-      run: gc D:\a\vcpkgCaching\vcpkgCaching\vcpkg\buildtrees\harfbuzz\package-x64-windows-dbg-out.log 
+      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -DVCPKG_INSTALL_OPTIONS="--x-buildtrees-root=C:/buildtrees" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
