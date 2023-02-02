@@ -53,3 +53,7 @@ jobs:
     
     - name: Configure CMake
       run: cmake -D "CMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
+
+    - name: Print log
+      if: always()
+      run: gc D:\a\vcpkgCaching\vcpkgCaching\vcpkg\buildtrees\harfbuzz\package-x64-windows-dbg-out.log 
