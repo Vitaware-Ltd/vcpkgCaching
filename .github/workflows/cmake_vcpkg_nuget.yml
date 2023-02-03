@@ -55,8 +55,10 @@ jobs:
   
     - run: Get-PSDrive
     - run: mkdir C:\buildtrees
+    - run: mkdir C:\packages
+    - run: mkdir C:\installed
     
     - uses: ilammy/msvc-dev-cmd@v1
     
     - name: Configure CMake
-      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -DVCPKG_INSTALL_OPTIONS="--x-buildtrees-root=C:/buildtrees" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
+      run: cmake -D "CMAKE_TOOLCHAIN_FILE=$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" -DVCPKG_INSTALL_OPTIONS="--x-buildtrees-root=C:/buildtrees;--x-packages-root=C:/packages;--x-install-root=C:/installed" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
