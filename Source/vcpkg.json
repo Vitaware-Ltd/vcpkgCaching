@@ -5,6 +5,7 @@
     [
         "qtbase",
         "qtsvg",
+        "qtwebsockets",
         "catch2",
         "curl",
         "nlohmann-json",
