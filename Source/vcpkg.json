@@ -28,7 +28,6 @@
         },
         "tclap", 
         "yaml-cpp",
-        "ixwebsocket",
         "date",
         "qtkeychain-qt6"
     ]
