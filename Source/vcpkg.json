@@ -29,6 +29,7 @@
         "tclap", 
         "yaml-cpp",
         "date",
-        "qtkeychain-qt6"
+        "qtkeychain-qt6",
+        "quazip"
     ]
 }
