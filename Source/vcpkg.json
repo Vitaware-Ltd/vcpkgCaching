@@ -30,6 +30,7 @@
         "yaml-cpp",
         "date",
         "qtkeychain-qt6",
-        "quazip"
+        "quazip",
+        "draco"
     ]
 }
