@@ -1,4 +1,4 @@
-name: CMake with vcpkg binary caching to GitHub Packages
+name: Build packages
 
 on:
   push:
