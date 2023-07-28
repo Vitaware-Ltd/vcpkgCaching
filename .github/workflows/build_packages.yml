@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - run: git config --global credential.helper '!f() { echo username=unused; echo password=${{ secrets.GITHUB_TOKEN }}; }; f'
+    - run: git config --global credential.helper '!f() { echo username=unused; echo password=${{ secrets.BUILD_PAT }}; }; f'
       shell: 'bash'
       name: 'git credential helper setup'
     
