@@ -16,13 +16,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - run: git config --global credential.helper '!f() { echo username=unused; echo password=${{ secrets.BUILD_PAT }}; }; f'
+    - run: git config --global credential.helper '!f() { echo username=unused; echo password=${{ secrets.GITHUB_TOKEN }}; }; f'
       shell: 'bash'
       name: 'git credential helper setup'
     
     - uses: nuget/setup-nuget@v1
       with:
-        nuget-api-key: ${{ secrets.BUILD_PAT }}
+        nuget-api-key: ${{ secrets.GITHUB_TOKEN }}
         nuget-version: 'latest'
     
     - name: 'Setup binary caching'
@@ -34,9 +34,9 @@ jobs:
           -storepasswordincleartext \
           -name "GitHub" \
           -username "Vitaware-Ltd" \
-          -password "${{ secrets.BUILD_PAT }}"
+          -password "${{ secrets.GITHUB_TOKEN }}"
         nuget \
-          setapikey "${{ secrets.BUILD_PAT }}" \
+          setapikey "${{ secrets.GITHUB_TOKEN }}" \
           -source "https://nuget.pkg.github.com/Vitaware-Ltd/index.json"
 
     # Don't symlink vcpkg to the C drive when building dependencies as the harfbuzz build
