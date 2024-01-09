@@ -30,7 +30,10 @@
         "yaml-cpp",
         "date",
         "qtkeychain-qt6",
-        "quazip",
+        {
+            "name" : "minizip-ng",
+            "features" : [ "zlib" ]
+        },
         "draco"
     ]
 }
