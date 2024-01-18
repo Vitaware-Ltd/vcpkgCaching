@@ -48,8 +48,6 @@ jobs:
     #    mkdir C:\vita_vcpkg
     #    New-Item -Path vcpkg -ItemType SymbolicLink -Value C:\vita_vcpkg
 
-    - uses: ilammy/msvc-dev-cmd@v1
-
     - uses: friendlyanon/setup-vcpkg@v1
       with:
         committish: 'a42af01b72c28a8e1d7b48107b33e4f286a55ef6'
@@ -59,6 +57,8 @@ jobs:
     - run: mkdir C:\vcpkg_buildtrees
     - run: mkdir C:\vcpkg_packages
     - run: mkdir C:\vcpkg_downloads
+    
+    - uses: ilammy/msvc-dev-cmd@v1
     
     - name: Configure CMake
       run: cmake -D "CMAKE_TOOLCHAIN_FILE=D:/a/vcpkgCaching/vcpkgCaching/vcpkg/scripts/buildsystems/vcpkg.cmake" -DCMAKE_SYSTEM_VERSION="10.0.22621" -DVCPKG_INSTALL_OPTIONS="--x-buildtrees-root=C:/vcpkg_buildtrees;--x-packages-root=C:/vcpkg_packages;--x-downloads-root=C:/vcpkg_downloads" -B "${{github.workspace}}/build" -S "${{github.workspace}}/Source"
