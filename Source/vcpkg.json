@@ -10,7 +10,6 @@
         "curl",
         "nlohmann-json",
         "qttools",
-        "sqlite3",
         "bshoshany-thread-pool",
         "vtkbool",
         {
@@ -34,6 +33,7 @@
             "name" : "minizip-ng",
             "features" : [ "zlib" ]
         },
-        "draco"
+        "draco",
+        "brotli"
     ]
 }
