@@ -50,7 +50,7 @@ jobs:
 
     - uses: friendlyanon/setup-vcpkg@v1
       with:
-        committish: 'a42af01b72c28a8e1d7b48107b33e4f286a55ef6'
+        committish: '97dd26728e3856ed1ab62ee74ee3a391d9c81d19'
         cache: 'false'
   
     - run: Get-PSDrive

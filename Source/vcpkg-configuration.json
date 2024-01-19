@@ -2,7 +2,7 @@
   "default-registry": {
     "kind": "git",
     "repository": "https://github.com/microsoft/vcpkg",
-    "baseline": "a42af01b72c28a8e1d7b48107b33e4f286a55ef6"
+    "baseline": "97dd26728e3856ed1ab62ee74ee3a391d9c81d19"
   },
   "registries": [
     {
@@ -11,8 +11,5 @@
       "baseline": "8229b8801449c8e4e546247384bbbd9422fd49fc",
       "packages": [ "ipopt", "pmp-library", "vtkbool", "tinyad" ]
     }
-  ],
-  "overlay-ports": [
-    "../OverlayPorts"
-   ]
+  ]
 }
