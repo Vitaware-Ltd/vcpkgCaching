@@ -11,5 +11,8 @@
       "baseline": "8229b8801449c8e4e546247384bbbd9422fd49fc",
       "packages": [ "ipopt", "pmp-library", "vtkbool", "tinyad" ]
     }
-  ]
+  ],
+  "overlay-ports": [
+    "../OverlayPorts",
+   ],
 }
